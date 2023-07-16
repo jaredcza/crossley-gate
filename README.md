@@ -1,6 +1,6 @@
 # Crossley Gate Interpreter
 
-This script monitors the input from an optocoupler connected to the LED output of a Centurion D5 (2008) gate motor.
+This script monitors the input from an optocoupler connected to the LED output of a Centurion D5 (2008) gate motor and sends a notification is the status changes.
 
 In more detail, this script:
 - Reads the status of the LED every tenth of a second (i.e. every 0.1 seconds), incrementing a count if the LED is illuminated
