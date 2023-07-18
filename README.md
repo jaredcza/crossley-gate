@@ -45,3 +45,9 @@ The interpreter monitors for activity on the *STATUS* LED as detailed by the [Ce
 | 3 flashes/second		| Battery low		|Gate has an AC power or battery failure	|Every 30 minutes
 
 Whether or not a notification should be sent, and whether the notification should be repeated, is customisable in the script.
+
+## Troubleshooting
+The ESP32 will provide some indication as to its current status as follows:
+- When connecting to WiFi, shortly after power is connected, the ESP32 will flash four times in quick succession. If the connection is successful, a further two flashes will follow soon after.
+- Following connection to WiFi, the ESP32 will flash to match the state of the gate *STATUS* LED (as outlined under LED Statuses, above). This indicates that the ESP32 is correctly monitoring the LED.
+- If the gate status changes and a notification is sent, the ESP32 will flash three times in quick succession.
